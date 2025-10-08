@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Affirmations Generator</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <h1>Ai Affirmations Generator</h1>
     </header>
     <main>
-        <form>
+        <form id="affirmations-generator-form">
             <input type="text" placeholder="Enter a word"
             autofocus
             required
@@ -23,11 +24,7 @@
             />
             <input type="submit" class="submit-button"/>
         </form>
-        <div class="affirmations-text">
-            The affirmations goes here
-            <br />
-            The affirmations goes here
-        </div>
+        <div class="affirmations-text" id="affirmations-text"></div>
 
     </main>
     
