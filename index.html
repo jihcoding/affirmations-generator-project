@@ -1,47 +1,60 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Poiret+One&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-   
-    <title>AI Affirmations Generator</title>
-</head>
-<body>
-    <div class="container">
-    <header>
-        <h1>Affirmations Generator with AI</h1>
-    </header>
-    <main>
-        <form id="affirmations-generator-form">
-            <input type="text" placeholder="Enter a word"
-            autofocus
-            required
-            autocomplete="off"
-            class="instruction"
-            id="user-instructions"
-            />
-            <input type="submit" class="submit-button"/>
-        </form>
-        <div class="affirmations-text" id="affirmations-text"></div>
 
-    </main>
-    
-    <footer>
-        This AI project was coded by <a href="https://github.com/jihcoding">Argielyn Lapid </a> and is open-sourced in
-        <a href="https://github.com/jihcoding/affirmations-generator-project" target="_blank">
-            Github
+    <title>AI Affirmations Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Affirmations Generator with AI</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="affirmations-generator-form">
+            <input
+              type="text"
+              placeholder="Type your vibe"
+              autofocus
+              required
+              autocomplete="off"
+              class="instruction"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Peace, Joy or Confidence</div>
+        </div>
+        <div class="affirmations-text hidden" id="affirmations-text"></div>
+      </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/jihcoding">Argielyn Lapid </a> and is
+        open-sourced in
+        <a
+          href="https://github.com/jihcoding/affirmations-generator-project"
+          target="_blank"
+        >
+          Github
         </a>
-        and is hosted on <a href="https://ai-affirmations-generator.netlify.app/" target="_blank">
-            Netlify
+        and is hosted on
+        <a
+          href="https://ai-affirmations-generator.netlify.app/"
+          target="_blank"
+        >
+          Netlify
         </a>
-    </footer>
+      </footer>
     </div>
 
     <script src="src/script.js"></script>
-</body>
+  </body>
 </html>
